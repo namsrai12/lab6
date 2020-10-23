@@ -1,7 +1,3 @@
-function Mendchilgee(){
-return <h1>Hello</h1>;
-}
-
 function Mendchilgee123(props){console.log(props)
 return(
     <div>   
