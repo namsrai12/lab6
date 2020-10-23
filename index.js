@@ -1,6 +1,10 @@
+function Mendchilgee(){
+return <h1>Hello</h1>;
+}
+
 function Mendchilgee123(props){console.log(props)
-    return(
-        <div>
+return(
+    <div>   
     <h1>{props.ner}</h1>
     <p>{props.nas}</p>
     <p>{props.surchBgaEseh ?"unen":"choloo awsan"}</p>
@@ -8,27 +12,26 @@ function Mendchilgee123(props){console.log(props)
     <p>{props.dunguud[1]}</p>
     <p>{props.dunguud[2]}</p>
     {props.dunguud.map(
-        ( el,index) => 
+        ( el, index) => 
         <p key={index}>{el}</p>
-    )
-    }
-    <p>props.myObj.mergjil</p>
-    <p>props.myobj.index</p>
-        </div>
+)
+}))
+<p>{props.myObj.mergjil}</p>
+<p>{props.myObj.index}</p>
+    </div>
+);
+}
+    ReactDOM.render(
+         <Mendchilgee123 ner={"Hello dorj"}
+         nas={20}
+         surchBgaEseh={true}
+         dunguud={[80,"dalan yos",true]}
+         myObj={{mergjil:'sw',index:'ds123442'}}/>   ,   
+       document.getElementById('root')
     );
-    }
-        ReactDOM.render(
-             <Mendchilgee123 ner={"Hello dorj"}
-             nas={20}
-             surchBgaEseh={true}
-             dunguud={[80,"dalan yos",true].le}
-             myObj={{mergjil:'sw',index:'ds123442'}}/>      
-           document.getElementById('root')
-        );
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
