@@ -15,7 +15,7 @@ return(
         ( el, index) => 
         <p key={index}>{el}</p>
 )
-}))
+}
 <p>{props.myObj.mergjil}</p>
 <p>{props.myObj.index}</p>
     </div>
